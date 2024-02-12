@@ -1,5 +1,37 @@
-.restaurant-list{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 100px;
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+
+.filtering {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search {
+  margin-right: 10px;
+
+}
+
+.search > button {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search > input {
+  border: 1px solid black;
+  height: 35px;
+  padding: 5px;
+}
+
+.filter > button{
+    background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+
 }

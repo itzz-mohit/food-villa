@@ -59,7 +59,7 @@ function Body() {
             Search
           </button>
         </div>
-        <div>
+        <div className="filter">
           <button
             onClick={() => {
               const filteredList = resList.filter(
