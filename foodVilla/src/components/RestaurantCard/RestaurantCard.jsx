@@ -1,5 +1,5 @@
 import React from "react";
-import "./Restaurant.css";
+import "./RestaurantCard.css";
 import { CDN_URL } from "../../utils/constants";
 
 function Restaurant(props) {

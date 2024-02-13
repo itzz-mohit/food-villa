@@ -1,7 +1,9 @@
 import React from "react";
 import "./Body.css";
 import { useState, useEffect } from "react";
-import { Restaurant, Shimmer } from "../index";
+import { RestaurantCard, Shimmer } from "../index";
+import { Link } from "react-router-dom";
+import useOnlineStatus from "../../hooks/useOnlineStatus";
 
 function Body() {
   const [resList, setResList] = useState([]);
@@ -32,6 +34,11 @@ function Body() {
   useEffect(() => {
     fetchData();
   }, []);
+
+  const onlineStatus = useOnlineStatus();
+  if(onlineStatus === false){
+    return <h1>Offline</h1>
+  }
 
   return resList.length === 0 ? (
     <Shimmer />
@@ -74,7 +81,12 @@ function Body() {
       </div>
       <div className="restaurant-list">
         {filteredRes.map((restaurant) => (
-          <Restaurant resData={restaurant?.info} key={restaurant?.info.id} />
+          <Link
+            key={restaurant?.info.id}
+            to={"/restaurant/" + restaurant?.info.id}
+          >
+            <RestaurantCard resData={restaurant?.info} />
+          </Link>
         ))}
       </div>
     </div>
