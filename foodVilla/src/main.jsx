@@ -11,6 +11,13 @@ import {
   RestaurantMenu,
 } from "./components/index.js";
 
+
+// Chunking
+// Code Splitting
+// Dynamic Bundling
+// lazy Loading
+// on demand loading
+// dynamix imoprt
 const Grocery = lazy(() => import("./components/Grocery/Grocery.jsx"));
 
 const appRouter = createBrowserRouter([
