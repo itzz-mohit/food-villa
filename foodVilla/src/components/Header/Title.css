@@ -1,3 +1,10 @@
-.logo{
-    width: 100px;
+.logo {
+  width: 80px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Title.css */
+
+.logo:hover {
+  transform: scale(1.1); /* Add a slight scale effect on hover */
 }

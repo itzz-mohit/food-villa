@@ -9,6 +9,7 @@ import {
   Contact,
   Error,
   RestaurantMenu,
+  Cart
 } from "./components/index.js";
 
 
@@ -48,6 +49,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurant/:resId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
     errorElement: <Error />,
