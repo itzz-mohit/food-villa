@@ -1,4 +1,4 @@
 const Grocery = () => {
-  return <div>This is grocery</div>;
+  return <div className="h-screen">This is grocery</div>;
 };
 export default Grocery;

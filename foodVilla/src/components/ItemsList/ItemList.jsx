@@ -1,5 +1,5 @@
 import React from "react";
-import { CDN_URL } from "../../utils/constants";
+import { CDN_URL } from "../../utils/constants"; 
 import { useDispatch } from "react-redux";
 import { addItem } from "../../features/cartSlice";
 import useSound from "use-sound";
