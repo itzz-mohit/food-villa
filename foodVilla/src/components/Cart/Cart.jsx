@@ -18,7 +18,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="text-center m-4 p-4 h-screen">
+    <div className="text-center m-4 p-4 ">
       <h1 className="text-3xl font-bold mb-6 text-gray-800">Cart Items</h1>
       <div className="w-8/12 m-auto bg-gray-100 p-6 rounded-lg shadow-md">
         <ItemList items={cartItems} />
