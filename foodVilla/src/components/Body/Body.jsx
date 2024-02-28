@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { RestaurantCard, RestaurantPromoted, Shimmer, Error } from "../index";
 import { Link } from "react-router-dom";
@@ -39,7 +38,7 @@ function Body() {
   if (onlineStatus === false) {
     return <h1>Offline</h1>;
   }
-
+  console.log(filteredRes);
   return resList.length === 0 ? (
     <Shimmer />
   ) : (
