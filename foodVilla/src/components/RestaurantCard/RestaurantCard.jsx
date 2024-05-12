@@ -2,7 +2,7 @@ import React from "react";
 import { CDN_URL } from "../../utils/constants";
 
 function RestaurantCard({ resData }) {
-  console.log(resData);
+  //console.log(resData);
   if (!resData) {
     return null;
   }
